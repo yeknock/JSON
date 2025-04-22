@@ -1,24 +1,35 @@
 #pragma once
 
+#include <string>
+
 enum class TokenType {
-    // Structural
     LeftBrace,      // {
     RightBrace,     // }
     LeftBracket,    // [
     RightBracket,   // ]
     Colon,          // :
     Comma,          // ,
-
-    // Literals
     True,           // true
     False,          // false
     Null,           // null
-
-    // Values
     String,         // "..."
     Number,         // 123, -3.14, 1e10
-
-    // Control
     EndOfFile,      // End of input
     Invalid         // For unexpected characters or tokens
 };
+
+
+struct Token
+{
+    TokenType type;
+    std::string value;
+    Token* next = nullptr;
+    Token* prev = nullptr;
+
+    // Constructor
+    Token (TokenType type_, const std::string& value_ = ""): type(type_), value(value_), next(nullptr), prev(nullptr) {  }
+};
+
+
+
+void tokenization(const std::string raw_str);
