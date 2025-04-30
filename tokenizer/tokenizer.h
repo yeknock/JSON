@@ -1,35 +1,48 @@
 #pragma once
 
 #include <string>
+#include <list>
 
 enum class TokenType {
-    LeftBrace,      // {
-    RightBrace,     // }
-    LeftBracket,    // [
-    RightBracket,   // ]
-    Colon,          // :
-    Comma,          // ,
-    True,           // true
-    False,          // false
-    Null,           // null
-    String,         // "..."
-    Number,         // 123, -3.14, 1e10
-    EndOfFile,      // End of input
-    Invalid         // For unexpected characters or tokens
+	OpenBrace,      // {
+	CloseBrace,     // }
+	OpenBracket,    // [
+	CloseBracket,   // ]
+	Colon,          // :
+	Comma,          // ,
+	True,           // true
+	False,          // false
+	Null,           // null
+	String,         // "..."
+	Number,         // 123, -3.14, 1e10
+	EndOfFile,      // End of input
+	Invalid         // For unexpected characters or tokens
 };
 
 
-struct Token
+class Token
 {
-    TokenType type;
-    std::string value;
-    Token* next = nullptr;
-    Token* prev = nullptr;
+	TokenType	type;
+	std::string value;
 
-    // Constructor
-    Token (TokenType type_, const std::string& value_ = ""): type(type_), value(value_), next(nullptr), prev(nullptr) {  }
+public:
+	Token	(): type(TokenType::Invalid), value("") {  }
+	Token	(TokenType type_, std::string value_ = ""): type(type_), value(value_) {  }
+
+	void	set(TokenType type_, std::string value_)
+	{
+		type = type_;
+		value = value_;
+	}
+	TokenType	get_type() { return type; }
+	std::string get_value() { return value; }
 };
 
 
 
-void tokenization(const std::string raw_str);
+
+
+std::vector<Token>	tokenization(const std::string& raw_str);
+void				print(std::vector<Token> t_list);
+void				open_brace_tokenization(std::vector<Token>& t_list, const std::string& raw_str, int *index);
+void				close_brace_tokenization(std::vector<Token>& t_list, const std::string& raw_str, int *index);

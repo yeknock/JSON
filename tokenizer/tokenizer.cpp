@@ -1,14 +1,36 @@
 #include "../main.h"
 
-void tokenization(const std::string raw_line)
-{
-    std::size_t length_of_raw_line = raw_line.length();
-    unsigned int count = 0;
-    for (std::size_t i = 0 ; i < length_of_raw_line ; i++)
-    {
-        if (raw_line[i] == ' ')
-            count++;
-    }
 
-    std::cout << count << std::endl;
+void	print(std::vector<Token> t_list)
+{
+	std::size_t	len = t_list.size();
+
+	for (size_t i = 0; i < len; i++)
+	{
+		std::cout << t_list[i].get_value() << " -> ";
+	}
+	std::cout << std::endl;
+	std::cout << t_list.capacity() << std::endl;
+}
+
+
+
+
+std::vector<Token>	tokenization(const std::string& raw_line)
+{
+	std::size_t			length_of_raw_line = raw_line.length();
+	int					current_index = 0;
+	std::vector<Token>	t_list;
+
+	while (current_index < length_of_raw_line)
+	{
+		if (raw_line[current_index] == '{')
+			open_brace_tokenization(t_list, raw_line, &current_index);
+		else if (raw_line[current_index] == '}')
+			close_brace_tokenization(t_list, raw_line, &current_index);
+		else
+			current_index++;
+	}
+
+	return t_list;
 }

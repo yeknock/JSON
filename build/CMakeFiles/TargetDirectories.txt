@@ -1,0 +1,3 @@
+/Users/yenoqmartirosyan/Desktop/json/build/CMakeFiles/json_parser.dir
+/Users/yenoqmartirosyan/Desktop/json/build/CMakeFiles/edit_cache.dir
+/Users/yenoqmartirosyan/Desktop/json/build/CMakeFiles/rebuild_cache.dir
