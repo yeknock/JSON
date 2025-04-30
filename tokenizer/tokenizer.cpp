@@ -17,11 +17,10 @@ void	print(std::vector<Token> t_list)
 
 
 
-std::vector<Token>	tokenization(const std::string& raw_line)
+void	tokenization(std::vector<Token>& t_list, std::string& raw_line)
 {
 	std::size_t			length_of_raw_line = raw_line.length();
 	int					current_index = 0;
-	std::vector<Token>	t_list;
 
 	while (current_index < length_of_raw_line)
 	{
@@ -37,9 +36,9 @@ std::vector<Token>	tokenization(const std::string& raw_line)
 			comma_tokenization(t_list, raw_line, &current_index);
 		else if (raw_line[current_index] == ':')
 			colon_tokenization(t_list, raw_line, &current_index);
+		else if (raw_line[current_index] == '"')
+			string_tokenization(t_list, raw_line, &current_index);
 		else
 			current_index++;
 	}
-
-	return t_list;
 }

@@ -2,10 +2,25 @@
 
 int main()
 {
-    const std::string raw_text = " {{{ \"nam}]e\": \"Yenok\", \"age\": 22 }  ,";
+	std::ifstream file("../data.json");
 
-    std::vector<Token> tokens_list = tokenization(raw_text);
-    print(tokens_list);
+	if (!file.is_open())
+	{
+		std::cerr << "Failed to open file!" << std::endl;
+		return 1;
+	}
 
-    return 0;
+
+	std::string raw_text;
+	std::vector<Token> tokens_list;
+
+	while (std::getline(file, raw_text))
+	{
+		tokenization(tokens_list, raw_text);
+	}
+
+	print(tokens_list);
+
+	file.close();
+	return 0;
 }
