@@ -10,7 +10,8 @@ void	print(std::vector<Token> t_list)
 		std::cout << t_list[i].get_value() << " -> ";
 	}
 	std::cout << std::endl;
-	std::cout << t_list.capacity() << std::endl;
+	std::cout << std::endl;
+	std::cout << "Capacity is: " << t_list.capacity() << std::endl;
 }
 
 
@@ -28,6 +29,14 @@ std::vector<Token>	tokenization(const std::string& raw_line)
 			open_brace_tokenization(t_list, raw_line, &current_index);
 		else if (raw_line[current_index] == '}')
 			close_brace_tokenization(t_list, raw_line, &current_index);
+		else if (raw_line[current_index] == '[')
+			open_bracket_tokenization(t_list, raw_line, &current_index);
+		else if (raw_line[current_index] == ']')
+			close_bracket_tokenization(t_list, raw_line, &current_index);
+		else if (raw_line[current_index] == ',')
+			comma_tokenization(t_list, raw_line, &current_index);
+		else if (raw_line[current_index] == ':')
+			colon_tokenization(t_list, raw_line, &current_index);
 		else
 			current_index++;
 	}

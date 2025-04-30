@@ -177,29 +177,53 @@ parser/parser.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/json_parser.dir/build.make CMakeFiles/json_parser.dir/parser/parser.cpp.s
 .PHONY : parser/parser.cpp.s
 
-tokenizer/brace_tokenization.o: tokenizer/brace_tokenization.cpp.o
-.PHONY : tokenizer/brace_tokenization.o
+tokenizer/brace_bracket_tokenization.o: tokenizer/brace_bracket_tokenization.cpp.o
+.PHONY : tokenizer/brace_bracket_tokenization.o
 
 # target to build an object file
-tokenizer/brace_tokenization.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/json_parser.dir/build.make CMakeFiles/json_parser.dir/tokenizer/brace_tokenization.cpp.o
-.PHONY : tokenizer/brace_tokenization.cpp.o
+tokenizer/brace_bracket_tokenization.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/json_parser.dir/build.make CMakeFiles/json_parser.dir/tokenizer/brace_bracket_tokenization.cpp.o
+.PHONY : tokenizer/brace_bracket_tokenization.cpp.o
 
-tokenizer/brace_tokenization.i: tokenizer/brace_tokenization.cpp.i
-.PHONY : tokenizer/brace_tokenization.i
+tokenizer/brace_bracket_tokenization.i: tokenizer/brace_bracket_tokenization.cpp.i
+.PHONY : tokenizer/brace_bracket_tokenization.i
 
 # target to preprocess a source file
-tokenizer/brace_tokenization.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/json_parser.dir/build.make CMakeFiles/json_parser.dir/tokenizer/brace_tokenization.cpp.i
-.PHONY : tokenizer/brace_tokenization.cpp.i
+tokenizer/brace_bracket_tokenization.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/json_parser.dir/build.make CMakeFiles/json_parser.dir/tokenizer/brace_bracket_tokenization.cpp.i
+.PHONY : tokenizer/brace_bracket_tokenization.cpp.i
 
-tokenizer/brace_tokenization.s: tokenizer/brace_tokenization.cpp.s
-.PHONY : tokenizer/brace_tokenization.s
+tokenizer/brace_bracket_tokenization.s: tokenizer/brace_bracket_tokenization.cpp.s
+.PHONY : tokenizer/brace_bracket_tokenization.s
 
 # target to generate assembly for a file
-tokenizer/brace_tokenization.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/json_parser.dir/build.make CMakeFiles/json_parser.dir/tokenizer/brace_tokenization.cpp.s
-.PHONY : tokenizer/brace_tokenization.cpp.s
+tokenizer/brace_bracket_tokenization.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/json_parser.dir/build.make CMakeFiles/json_parser.dir/tokenizer/brace_bracket_tokenization.cpp.s
+.PHONY : tokenizer/brace_bracket_tokenization.cpp.s
+
+tokenizer/comma_colon_tokenization.o: tokenizer/comma_colon_tokenization.cpp.o
+.PHONY : tokenizer/comma_colon_tokenization.o
+
+# target to build an object file
+tokenizer/comma_colon_tokenization.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/json_parser.dir/build.make CMakeFiles/json_parser.dir/tokenizer/comma_colon_tokenization.cpp.o
+.PHONY : tokenizer/comma_colon_tokenization.cpp.o
+
+tokenizer/comma_colon_tokenization.i: tokenizer/comma_colon_tokenization.cpp.i
+.PHONY : tokenizer/comma_colon_tokenization.i
+
+# target to preprocess a source file
+tokenizer/comma_colon_tokenization.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/json_parser.dir/build.make CMakeFiles/json_parser.dir/tokenizer/comma_colon_tokenization.cpp.i
+.PHONY : tokenizer/comma_colon_tokenization.cpp.i
+
+tokenizer/comma_colon_tokenization.s: tokenizer/comma_colon_tokenization.cpp.s
+.PHONY : tokenizer/comma_colon_tokenization.s
+
+# target to generate assembly for a file
+tokenizer/comma_colon_tokenization.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/json_parser.dir/build.make CMakeFiles/json_parser.dir/tokenizer/comma_colon_tokenization.cpp.s
+.PHONY : tokenizer/comma_colon_tokenization.cpp.s
 
 tokenizer/tokenizer.o: tokenizer/tokenizer.cpp.o
 .PHONY : tokenizer/tokenizer.o
@@ -240,9 +264,12 @@ help:
 	@echo "... parser/parser.o"
 	@echo "... parser/parser.i"
 	@echo "... parser/parser.s"
-	@echo "... tokenizer/brace_tokenization.o"
-	@echo "... tokenizer/brace_tokenization.i"
-	@echo "... tokenizer/brace_tokenization.s"
+	@echo "... tokenizer/brace_bracket_tokenization.o"
+	@echo "... tokenizer/brace_bracket_tokenization.i"
+	@echo "... tokenizer/brace_bracket_tokenization.s"
+	@echo "... tokenizer/comma_colon_tokenization.o"
+	@echo "... tokenizer/comma_colon_tokenization.i"
+	@echo "... tokenizer/comma_colon_tokenization.s"
 	@echo "... tokenizer/tokenizer.o"
 	@echo "... tokenizer/tokenizer.i"
 	@echo "... tokenizer/tokenizer.s"

@@ -10,7 +10,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/yenoqmartirosyan/Desktop/json/main.cpp" "CMakeFiles/json_parser.dir/main.cpp.o" "gcc" "CMakeFiles/json_parser.dir/main.cpp.o.d"
   "/Users/yenoqmartirosyan/Desktop/json/parser/parser.cpp" "CMakeFiles/json_parser.dir/parser/parser.cpp.o" "gcc" "CMakeFiles/json_parser.dir/parser/parser.cpp.o.d"
-  "/Users/yenoqmartirosyan/Desktop/json/tokenizer/brace_tokenization.cpp" "CMakeFiles/json_parser.dir/tokenizer/brace_tokenization.cpp.o" "gcc" "CMakeFiles/json_parser.dir/tokenizer/brace_tokenization.cpp.o.d"
+  "/Users/yenoqmartirosyan/Desktop/json/tokenizer/brace_bracket_tokenization.cpp" "CMakeFiles/json_parser.dir/tokenizer/brace_bracket_tokenization.cpp.o" "gcc" "CMakeFiles/json_parser.dir/tokenizer/brace_bracket_tokenization.cpp.o.d"
+  "/Users/yenoqmartirosyan/Desktop/json/tokenizer/comma_colon_tokenization.cpp" "CMakeFiles/json_parser.dir/tokenizer/comma_colon_tokenization.cpp.o" "gcc" "CMakeFiles/json_parser.dir/tokenizer/comma_colon_tokenization.cpp.o.d"
   "/Users/yenoqmartirosyan/Desktop/json/tokenizer/tokenizer.cpp" "CMakeFiles/json_parser.dir/tokenizer/tokenizer.cpp.o" "gcc" "CMakeFiles/json_parser.dir/tokenizer/tokenizer.cpp.o.d"
   )
 

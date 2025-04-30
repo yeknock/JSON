@@ -15,7 +15,8 @@ set(SOURCES
     main.cpp
     parser/parser.cpp
     tokenizer/tokenizer.cpp
-    tokenizer/brace_tokenization.cpp
+    tokenizer/brace_bracket_tokenization.cpp
+    tokenizer/comma_colon_tokenization.cpp
 )
 
 add_executable(json_parser ${SOURCES})

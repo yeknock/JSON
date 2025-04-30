@@ -46,3 +46,7 @@ std::vector<Token>	tokenization(const std::string& raw_str);
 void				print(std::vector<Token> t_list);
 void				open_brace_tokenization(std::vector<Token>& t_list, const std::string& raw_str, int *index);
 void				close_brace_tokenization(std::vector<Token>& t_list, const std::string& raw_str, int *index);
+void				open_bracket_tokenization(std::vector<Token>& t_list, const std::string& raw_str, int *index);
+void				close_bracket_tokenization(std::vector<Token>& t_list, const std::string& raw_str, int *index);
+void				comma_tokenization(std::vector<Token>& t_list, const std::string& raw_str, int *index);
+void				colon_tokenization(std::vector<Token>& t_list, const std::string& raw_str, int *index);
