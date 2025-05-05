@@ -39,8 +39,8 @@ void	tokenization(std::vector<Token>& t_list, std::string& raw_line)
 			string_tokenization(t_list, raw_line, &current_index);
 		else if (std::isdigit(raw_line[current_index]) || raw_line[current_index] == '-')
 			number_tokenization(t_list, raw_line, &current_index);
-		else if (raw_line[current_index] == 'f' || raw_line[current_index] == 't')
-			tr_fls_tokenization(t_list, raw_line, &current_index);
+		else if (raw_line[current_index] == 'f' || raw_line[current_index] == 't' || raw_line[current_index] == 'n')
+			tr_fls_null_tokenization(t_list, raw_line, &current_index);
 		else
 			current_index++;
 	}

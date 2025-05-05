@@ -4905,7 +4905,7 @@ CMakeFiles/json_parser.dir/tokenizer/tokenizer.cpp.o: /Users/yenoqmartirosyan/De
   /Users/yenoqmartirosyan/Desktop/json/main.h \
   /Users/yenoqmartirosyan/Desktop/json/tokenizer/tokenizer.h
 
-CMakeFiles/json_parser.dir/tokenizer/tr_fls_tokenization.cpp.o: /Users/yenoqmartirosyan/Desktop/json/tokenizer/tr_fls_tokenization.cpp \
+CMakeFiles/json_parser.dir/tokenizer/tr_fls_null_tokenization.cpp.o: /Users/yenoqmartirosyan/Desktop/json/tokenizer/tr_fls_null_tokenization.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h \
@@ -5723,7 +5723,7 @@ CMakeFiles/json_parser.dir/tokenizer/tr_fls_tokenization.cpp.o: /Users/yenoqmart
   /Users/yenoqmartirosyan/Desktop/json/tokenizer/tokenizer.h
 
 
-/Users/yenoqmartirosyan/Desktop/json/tokenizer/tr_fls_tokenization.cpp:
+/Users/yenoqmartirosyan/Desktop/json/tokenizer/tr_fls_null_tokenization.cpp:
 
 /Users/yenoqmartirosyan/Desktop/json/tokenizer/tokenizer.cpp:
 

@@ -170,19 +170,19 @@ CMakeFiles/json_parser.dir/tokenizer/number_tokenization.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/json_parser.dir/tokenizer/number_tokenization.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/yenoqmartirosyan/Desktop/json/tokenizer/number_tokenization.cpp -o CMakeFiles/json_parser.dir/tokenizer/number_tokenization.cpp.s
 
-CMakeFiles/json_parser.dir/tokenizer/tr_fls_tokenization.cpp.o: CMakeFiles/json_parser.dir/flags.make
-CMakeFiles/json_parser.dir/tokenizer/tr_fls_tokenization.cpp.o: /Users/yenoqmartirosyan/Desktop/json/tokenizer/tr_fls_tokenization.cpp
-CMakeFiles/json_parser.dir/tokenizer/tr_fls_tokenization.cpp.o: CMakeFiles/json_parser.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/yenoqmartirosyan/Desktop/json/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/json_parser.dir/tokenizer/tr_fls_tokenization.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/json_parser.dir/tokenizer/tr_fls_tokenization.cpp.o -MF CMakeFiles/json_parser.dir/tokenizer/tr_fls_tokenization.cpp.o.d -o CMakeFiles/json_parser.dir/tokenizer/tr_fls_tokenization.cpp.o -c /Users/yenoqmartirosyan/Desktop/json/tokenizer/tr_fls_tokenization.cpp
+CMakeFiles/json_parser.dir/tokenizer/tr_fls_null_tokenization.cpp.o: CMakeFiles/json_parser.dir/flags.make
+CMakeFiles/json_parser.dir/tokenizer/tr_fls_null_tokenization.cpp.o: /Users/yenoqmartirosyan/Desktop/json/tokenizer/tr_fls_null_tokenization.cpp
+CMakeFiles/json_parser.dir/tokenizer/tr_fls_null_tokenization.cpp.o: CMakeFiles/json_parser.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/yenoqmartirosyan/Desktop/json/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/json_parser.dir/tokenizer/tr_fls_null_tokenization.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/json_parser.dir/tokenizer/tr_fls_null_tokenization.cpp.o -MF CMakeFiles/json_parser.dir/tokenizer/tr_fls_null_tokenization.cpp.o.d -o CMakeFiles/json_parser.dir/tokenizer/tr_fls_null_tokenization.cpp.o -c /Users/yenoqmartirosyan/Desktop/json/tokenizer/tr_fls_null_tokenization.cpp
 
-CMakeFiles/json_parser.dir/tokenizer/tr_fls_tokenization.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/json_parser.dir/tokenizer/tr_fls_tokenization.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/yenoqmartirosyan/Desktop/json/tokenizer/tr_fls_tokenization.cpp > CMakeFiles/json_parser.dir/tokenizer/tr_fls_tokenization.cpp.i
+CMakeFiles/json_parser.dir/tokenizer/tr_fls_null_tokenization.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/json_parser.dir/tokenizer/tr_fls_null_tokenization.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/yenoqmartirosyan/Desktop/json/tokenizer/tr_fls_null_tokenization.cpp > CMakeFiles/json_parser.dir/tokenizer/tr_fls_null_tokenization.cpp.i
 
-CMakeFiles/json_parser.dir/tokenizer/tr_fls_tokenization.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/json_parser.dir/tokenizer/tr_fls_tokenization.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/yenoqmartirosyan/Desktop/json/tokenizer/tr_fls_tokenization.cpp -o CMakeFiles/json_parser.dir/tokenizer/tr_fls_tokenization.cpp.s
+CMakeFiles/json_parser.dir/tokenizer/tr_fls_null_tokenization.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/json_parser.dir/tokenizer/tr_fls_null_tokenization.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/yenoqmartirosyan/Desktop/json/tokenizer/tr_fls_null_tokenization.cpp -o CMakeFiles/json_parser.dir/tokenizer/tr_fls_null_tokenization.cpp.s
 
 # Object files for target json_parser
 json_parser_OBJECTS = \
@@ -193,7 +193,7 @@ json_parser_OBJECTS = \
 "CMakeFiles/json_parser.dir/tokenizer/comma_colon_tokenization.cpp.o" \
 "CMakeFiles/json_parser.dir/tokenizer/string_tokenization.cpp.o" \
 "CMakeFiles/json_parser.dir/tokenizer/number_tokenization.cpp.o" \
-"CMakeFiles/json_parser.dir/tokenizer/tr_fls_tokenization.cpp.o"
+"CMakeFiles/json_parser.dir/tokenizer/tr_fls_null_tokenization.cpp.o"
 
 # External object files for target json_parser
 json_parser_EXTERNAL_OBJECTS =
@@ -205,7 +205,7 @@ json_parser: CMakeFiles/json_parser.dir/tokenizer/brace_bracket_tokenization.cpp
 json_parser: CMakeFiles/json_parser.dir/tokenizer/comma_colon_tokenization.cpp.o
 json_parser: CMakeFiles/json_parser.dir/tokenizer/string_tokenization.cpp.o
 json_parser: CMakeFiles/json_parser.dir/tokenizer/number_tokenization.cpp.o
-json_parser: CMakeFiles/json_parser.dir/tokenizer/tr_fls_tokenization.cpp.o
+json_parser: CMakeFiles/json_parser.dir/tokenizer/tr_fls_null_tokenization.cpp.o
 json_parser: CMakeFiles/json_parser.dir/build.make
 json_parser: CMakeFiles/json_parser.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/yenoqmartirosyan/Desktop/json/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable json_parser"

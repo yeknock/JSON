@@ -2,19 +2,19 @@
 
 
 enum class TokenType {
-	OpenBrace,      // {
-	CloseBrace,     // }
-	OpenBracket,    // [
-	CloseBracket,   // ]
-	Colon,          // :
-	Comma,          // ,
-	True,           // true
-	False,          // false
-	Null,           // null
-	String,         // "..."
-	Number,         // 123, -3.14, 1e10
-	EndOfFile,      // End of input
-	Invalid         // For unexpected characters or tokens
+	OpenBrace,      // {										+
+	CloseBrace,     // }										+
+	OpenBracket,    // [										+
+	CloseBracket,   // ]										+
+	Colon,          // :										+
+	Comma,          // ,										+
+	True,           // true										+
+	False,          // false									+
+	Null,           // null										+
+	String,         // "..."									+
+	Number,         // 123, -3.14, 1e10							+
+	EndOfFile,      // End of input								-
+	Invalid         // For unexpected characters or tokens		-
 };
 
 
@@ -48,4 +48,4 @@ void				comma_tokenization(std::vector<Token>& t_list, const std::string& raw_st
 void				colon_tokenization(std::vector<Token>& t_list, const std::string& raw_str, int *index);
 void				string_tokenization(std::vector<Token>& t_list, const std::string& raw_str, int *index);
 void				number_tokenization(std::vector<Token>& t_list, const std::string& raw_str, int *index);
-void				tr_fls_tokenization(std::vector<Token>& t_list, const std::string& raw_str, int *index);
+void				tr_fls_null_tokenization(std::vector<Token>& t_list, const std::string& raw_str, int *index);
