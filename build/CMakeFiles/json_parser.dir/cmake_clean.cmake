@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/json_parser.dir/tokenizer/brace_bracket_tokenization.cpp.o.d"
   "CMakeFiles/json_parser.dir/tokenizer/comma_colon_tokenization.cpp.o"
   "CMakeFiles/json_parser.dir/tokenizer/comma_colon_tokenization.cpp.o.d"
+  "CMakeFiles/json_parser.dir/tokenizer/number_tokenization.cpp.o"
+  "CMakeFiles/json_parser.dir/tokenizer/number_tokenization.cpp.o.d"
   "CMakeFiles/json_parser.dir/tokenizer/string_tokenization.cpp.o"
   "CMakeFiles/json_parser.dir/tokenizer/string_tokenization.cpp.o.d"
   "CMakeFiles/json_parser.dir/tokenizer/tokenizer.cpp.o"

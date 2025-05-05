@@ -225,6 +225,30 @@ tokenizer/comma_colon_tokenization.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/json_parser.dir/build.make CMakeFiles/json_parser.dir/tokenizer/comma_colon_tokenization.cpp.s
 .PHONY : tokenizer/comma_colon_tokenization.cpp.s
 
+tokenizer/number_tokenization.o: tokenizer/number_tokenization.cpp.o
+.PHONY : tokenizer/number_tokenization.o
+
+# target to build an object file
+tokenizer/number_tokenization.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/json_parser.dir/build.make CMakeFiles/json_parser.dir/tokenizer/number_tokenization.cpp.o
+.PHONY : tokenizer/number_tokenization.cpp.o
+
+tokenizer/number_tokenization.i: tokenizer/number_tokenization.cpp.i
+.PHONY : tokenizer/number_tokenization.i
+
+# target to preprocess a source file
+tokenizer/number_tokenization.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/json_parser.dir/build.make CMakeFiles/json_parser.dir/tokenizer/number_tokenization.cpp.i
+.PHONY : tokenizer/number_tokenization.cpp.i
+
+tokenizer/number_tokenization.s: tokenizer/number_tokenization.cpp.s
+.PHONY : tokenizer/number_tokenization.s
+
+# target to generate assembly for a file
+tokenizer/number_tokenization.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/json_parser.dir/build.make CMakeFiles/json_parser.dir/tokenizer/number_tokenization.cpp.s
+.PHONY : tokenizer/number_tokenization.cpp.s
+
 tokenizer/string_tokenization.o: tokenizer/string_tokenization.cpp.o
 .PHONY : tokenizer/string_tokenization.o
 
@@ -294,6 +318,9 @@ help:
 	@echo "... tokenizer/comma_colon_tokenization.o"
 	@echo "... tokenizer/comma_colon_tokenization.i"
 	@echo "... tokenizer/comma_colon_tokenization.s"
+	@echo "... tokenizer/number_tokenization.o"
+	@echo "... tokenizer/number_tokenization.i"
+	@echo "... tokenizer/number_tokenization.s"
 	@echo "... tokenizer/string_tokenization.o"
 	@echo "... tokenizer/string_tokenization.i"
 	@echo "... tokenizer/string_tokenization.s"

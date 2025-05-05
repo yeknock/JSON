@@ -8,8 +8,7 @@ void	string_tokenization(std::vector<Token>& t_list, const std::string& raw_str,
 	int			i = *index + 1;
 	Token		new_token;
 
-	while(raw_str[i] != '"')
-		i++;
+	while(raw_str[i] != '"') i++;
 
 	lastIndexOfString = i; // getting the last index of the appending string
 	appended_string = raw_str.substr(firstIndexOfString, lastIndexOfString - firstIndexOfString); // find appending string in the raw_str

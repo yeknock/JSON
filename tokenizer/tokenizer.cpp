@@ -38,6 +38,8 @@ void	tokenization(std::vector<Token>& t_list, std::string& raw_line)
 			colon_tokenization(t_list, raw_line, &current_index);
 		else if (raw_line[current_index] == '"')
 			string_tokenization(t_list, raw_line, &current_index);
+		else if (std::isdigit(raw_line[current_index]) || raw_line[current_index] == '-')
+			number_tokenization(t_list, raw_line, &current_index);
 		else
 			current_index++;
 	}
