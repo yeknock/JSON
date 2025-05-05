@@ -48,3 +48,4 @@ void				comma_tokenization(std::vector<Token>& t_list, const std::string& raw_st
 void				colon_tokenization(std::vector<Token>& t_list, const std::string& raw_str, int *index);
 void				string_tokenization(std::vector<Token>& t_list, const std::string& raw_str, int *index);
 void				number_tokenization(std::vector<Token>& t_list, const std::string& raw_str, int *index);
+void				tr_fls_tokenization(std::vector<Token>& t_list, const std::string& raw_str, int *index);

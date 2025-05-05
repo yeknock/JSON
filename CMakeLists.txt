@@ -19,6 +19,7 @@ set(SOURCES
     tokenizer/comma_colon_tokenization.cpp
     tokenizer/string_tokenization.cpp
     tokenizer/number_tokenization.cpp
+    tokenizer/tr_fls_tokenization.cpp
 )
 
 add_executable(json_parser ${SOURCES})

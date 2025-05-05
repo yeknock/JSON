@@ -297,6 +297,30 @@ tokenizer/tokenizer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/json_parser.dir/build.make CMakeFiles/json_parser.dir/tokenizer/tokenizer.cpp.s
 .PHONY : tokenizer/tokenizer.cpp.s
 
+tokenizer/tr_fls_tokenization.o: tokenizer/tr_fls_tokenization.cpp.o
+.PHONY : tokenizer/tr_fls_tokenization.o
+
+# target to build an object file
+tokenizer/tr_fls_tokenization.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/json_parser.dir/build.make CMakeFiles/json_parser.dir/tokenizer/tr_fls_tokenization.cpp.o
+.PHONY : tokenizer/tr_fls_tokenization.cpp.o
+
+tokenizer/tr_fls_tokenization.i: tokenizer/tr_fls_tokenization.cpp.i
+.PHONY : tokenizer/tr_fls_tokenization.i
+
+# target to preprocess a source file
+tokenizer/tr_fls_tokenization.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/json_parser.dir/build.make CMakeFiles/json_parser.dir/tokenizer/tr_fls_tokenization.cpp.i
+.PHONY : tokenizer/tr_fls_tokenization.cpp.i
+
+tokenizer/tr_fls_tokenization.s: tokenizer/tr_fls_tokenization.cpp.s
+.PHONY : tokenizer/tr_fls_tokenization.s
+
+# target to generate assembly for a file
+tokenizer/tr_fls_tokenization.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/json_parser.dir/build.make CMakeFiles/json_parser.dir/tokenizer/tr_fls_tokenization.cpp.s
+.PHONY : tokenizer/tr_fls_tokenization.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -327,6 +351,9 @@ help:
 	@echo "... tokenizer/tokenizer.o"
 	@echo "... tokenizer/tokenizer.i"
 	@echo "... tokenizer/tokenizer.s"
+	@echo "... tokenizer/tr_fls_tokenization.o"
+	@echo "... tokenizer/tr_fls_tokenization.i"
+	@echo "... tokenizer/tr_fls_tokenization.s"
 .PHONY : help
 
 

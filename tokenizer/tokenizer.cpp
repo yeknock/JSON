@@ -7,13 +7,12 @@ void	print(std::vector<Token> t_list)
 
 	for (size_t i = 0; i < len; i++)
 	{
-		std::cout << t_list[i].get_value() << " -> ";
+		std::cout << i + 1 << ") Value: " << t_list[i].get_value() << ", TokenType: " << int(t_list[i].get_type()) << "\n";
 	}
 	std::cout << std::endl;
 	std::cout << std::endl;
 	std::cout << "Capacity is: " << t_list.capacity() << std::endl;
 }
-
 
 
 
@@ -40,6 +39,8 @@ void	tokenization(std::vector<Token>& t_list, std::string& raw_line)
 			string_tokenization(t_list, raw_line, &current_index);
 		else if (std::isdigit(raw_line[current_index]) || raw_line[current_index] == '-')
 			number_tokenization(t_list, raw_line, &current_index);
+		else if (raw_line[current_index] == 'f' || raw_line[current_index] == 't')
+			tr_fls_tokenization(t_list, raw_line, &current_index);
 		else
 			current_index++;
 	}
