@@ -41,7 +41,13 @@ void	tokenization(std::vector<Token>& t_list, std::string& raw_line)
 			number_tokenization(t_list, raw_line, &current_index);
 		else if (raw_line[current_index] == 'f' || raw_line[current_index] == 't' || raw_line[current_index] == 'n')
 			tr_fls_null_tokenization(t_list, raw_line, &current_index);
-		else
+		else if (std::isspace(raw_line[current_index]))
 			current_index++;
+		else
+		{
+			std::string invalid_char(1, raw_line[current_index]);
+			t_list.push_back(Token(TokenType::Invalid, invalid_char));
+			current_index++;
+		}
 	}
 }

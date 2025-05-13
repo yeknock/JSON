@@ -50,3 +50,4 @@ void				string_tokenization(std::vector<Token>& t_list, const std::string& raw_s
 void				number_tokenization(std::vector<Token>& t_list, const std::string& raw_str, int *index);
 void				tr_fls_null_tokenization(std::vector<Token>& t_list, const std::string& raw_str, int *index);
 void				eof_tokenization(std::vector<Token>& t_list);
+void				invalid_tokenization(std::vector<Token>& t_list, const std::string& raw_str, int *index);

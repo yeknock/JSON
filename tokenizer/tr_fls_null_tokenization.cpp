@@ -11,17 +11,24 @@ void	tr_fls_null_tokenization(std::vector<Token>& t_list, const std::string& raw
 		new_token.set(TokenType::False, cut_false);
 		t_list.push_back(new_token);
 		(*index) += 5;
+		return;
 	}
 	if (cut_true_null == "true")
 	{
 		new_token.set(TokenType::True, cut_true_null);
 		t_list.push_back(new_token);
 		(*index) += 4;
+		return;
 	}
 	if (cut_true_null == "null")
 	{
 		new_token.set(TokenType::Null, cut_true_null);
 		t_list.push_back(new_token);
 		(*index) += 4;
+		return;
 	}
+
+	std::string invalid_char(1, raw_str[*index]);
+	t_list.push_back(Token(TokenType::Invalid, invalid_char));
+	(*index)++;
 }
