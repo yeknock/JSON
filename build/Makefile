@@ -225,6 +225,30 @@ tokenizer/comma_colon_tokenization.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/json_parser.dir/build.make CMakeFiles/json_parser.dir/tokenizer/comma_colon_tokenization.cpp.s
 .PHONY : tokenizer/comma_colon_tokenization.cpp.s
 
+tokenizer/eof_invalid_tokenization.o: tokenizer/eof_invalid_tokenization.cpp.o
+.PHONY : tokenizer/eof_invalid_tokenization.o
+
+# target to build an object file
+tokenizer/eof_invalid_tokenization.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/json_parser.dir/build.make CMakeFiles/json_parser.dir/tokenizer/eof_invalid_tokenization.cpp.o
+.PHONY : tokenizer/eof_invalid_tokenization.cpp.o
+
+tokenizer/eof_invalid_tokenization.i: tokenizer/eof_invalid_tokenization.cpp.i
+.PHONY : tokenizer/eof_invalid_tokenization.i
+
+# target to preprocess a source file
+tokenizer/eof_invalid_tokenization.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/json_parser.dir/build.make CMakeFiles/json_parser.dir/tokenizer/eof_invalid_tokenization.cpp.i
+.PHONY : tokenizer/eof_invalid_tokenization.cpp.i
+
+tokenizer/eof_invalid_tokenization.s: tokenizer/eof_invalid_tokenization.cpp.s
+.PHONY : tokenizer/eof_invalid_tokenization.s
+
+# target to generate assembly for a file
+tokenizer/eof_invalid_tokenization.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/json_parser.dir/build.make CMakeFiles/json_parser.dir/tokenizer/eof_invalid_tokenization.cpp.s
+.PHONY : tokenizer/eof_invalid_tokenization.cpp.s
+
 tokenizer/number_tokenization.o: tokenizer/number_tokenization.cpp.o
 .PHONY : tokenizer/number_tokenization.o
 
@@ -342,6 +366,9 @@ help:
 	@echo "... tokenizer/comma_colon_tokenization.o"
 	@echo "... tokenizer/comma_colon_tokenization.i"
 	@echo "... tokenizer/comma_colon_tokenization.s"
+	@echo "... tokenizer/eof_invalid_tokenization.o"
+	@echo "... tokenizer/eof_invalid_tokenization.i"
+	@echo "... tokenizer/eof_invalid_tokenization.s"
 	@echo "... tokenizer/number_tokenization.o"
 	@echo "... tokenizer/number_tokenization.i"
 	@echo "... tokenizer/number_tokenization.s"

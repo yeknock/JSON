@@ -19,6 +19,8 @@ int main()
 		tokenization(tokens_list, raw_text);
 	}
 
+	eof_tokenization(tokens_list); // at the last part of the Token list we add EOF token
+
 	print(tokens_list);
 
 	file.close();
