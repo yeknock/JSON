@@ -21,6 +21,7 @@ set(SOURCES
     tokenizer/number_tokenization.cpp
     tokenizer/tr_fls_null_tokenization.cpp
     tokenizer/eof_invalid_tokenization.cpp
+    parser/parser.cpp
 )
 
 add_executable(json_parser ${SOURCES})

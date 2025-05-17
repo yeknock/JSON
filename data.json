@@ -2,7 +2,5 @@
   "name": "Yenok",
   "surname": "Martirosyan -43",
   "age": 90e3,
-  "married": true,
-  "another": null,
-  "bla": null
+  "married": true
 }

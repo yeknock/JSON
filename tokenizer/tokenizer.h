@@ -13,9 +13,11 @@ enum class TokenType {
 	Null,           // null										+
 	String,         // "..."									+
 	Number,         // 123, -3.14, 1e10							+
-	EndOfFile,      // End of input								-
-	Invalid         // For unexpected characters or tokens		-
+	EndOfFile,      // End of input								+
+	Invalid         // For unexpected characters or tokens		+
 };
+
+
 
 
 class Token
@@ -35,6 +37,8 @@ public:
 	TokenType	get_type() { return type; }
 	std::string get_value() { return value; }
 };
+
+
 
 
 
