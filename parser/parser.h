@@ -15,9 +15,11 @@ enum class JsonType
 struct JsonValue
 {
 	JsonType type;
+
 	std::string stringValue;
 	double numberValue;
 	bool boolValue;
+
 	std::vector<JsonValue> arrayValue;
 	std::map<std::string, JsonValue> objectValue;
 };
@@ -31,5 +33,11 @@ public:
 };
 
 
-void	parser(std::vector<Token>& t_list);
-void	check_invalid_tokens(std::vector<Token>& t_list);
+void		check_invalid_tokens(const std::vector<Token>& t_list);
+JsonValue	parser(const std::vector<Token>& t_list);
+JsonValue	parseValue(const std::vector<Token>& t_list, int *index);
+JsonValue	parseObject(const std::vector<Token>& t_list, int *index);
+JsonValue	parseArray(const std::vector<Token>& t_list, int *index);
+JsonValue	parseString(const std::vector<Token>& t_list, int *index);
+JsonValue	parseNumber(const std::vector<Token>& t_list, int *index);
+JsonValue	parseLiterals(const std::vector<Token>& t_list, int *index);
